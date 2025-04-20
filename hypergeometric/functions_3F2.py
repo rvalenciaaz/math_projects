@@ -71,7 +71,7 @@ def Watson(a, b, c):
                  \Gamma\!\left(c-\tfrac{b}{2}\right)}.
     """
     num = sqrt(pi) * gamma(c + SR(1) / 2) * gamma((a + b + 1) / 2) * gamma(c - (a + b) / 2)
-    den = gamma((a + 1) / 2) * gamma((b + 1) / 2) * gamma(c - a / 2) * gamma(c - b / 2)
+    den = gamma((a + 1) / 2) * gamma((b + 1) / 2) * gamma(c + (1-a) / 2) * gamma(c + (1-b) / 2)
     return num / den
 
 ###############################################################################
