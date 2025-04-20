@@ -17,8 +17,6 @@ Example usage in a Sage session::
     sage: Dixon(a, b, c)                  # symbolic
     sage: Dixon(1/2, 1/3, 1/4).n()        # numeric
     sage: latex(Watson(a, b, c))          # LaTeX code
-
-Author: ChatGPT — 19 Apr 2025
 """
 
 from sage.all import hypergeometric, gamma, sqrt, pi, var, latex, SR
