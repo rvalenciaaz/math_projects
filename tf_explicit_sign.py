@@ -17,12 +17,12 @@ def inverse_direct(n_val: int):
 
         if i >= 2:                                  # the “minus” leg
             I = sp.Integer(i)
-            terms.append(-sp.sqrt((I - 1) / I) * q[i - 1])
+            terms.append(sp.sqrt((I - 1) / I) * q[i - 1])
 
         # “tail” coefficients  1/√(k(k+1))
         for k in range(max(1, i), n_val):
             K = sp.Integer(k)
-            terms.append(q[k] / sp.sqrt(K * (K + 1)))
+            terms.append(-q[k] / sp.sqrt(K * (K + 1)))
 
         result.append(sp.simplify(sp.Add(*terms)))
 

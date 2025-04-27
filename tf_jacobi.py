@@ -4,7 +4,7 @@ import sympy as sp
 sp.init_printing()
 
 # Choose specific n
-n_val = 3  # you can change this
+n_val = 4  # you can change this
 n = sp.Integer(n_val)
 
 # Define indexed variables
