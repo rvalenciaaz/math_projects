@@ -12,7 +12,7 @@
 # ------------------------------------------------------------
 set -euo pipefail
 
-SCRIPT="conn_cubic_evol_return_scalabel_multirun.py"
+SCRIPT="csv_saving.py"
 
 # Extra args let you override gens, runs, seed, cores, etc.
 EXTRA_ARGS="$@"
